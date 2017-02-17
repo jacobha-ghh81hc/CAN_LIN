@@ -1,0 +1,27 @@
+21:21:59 **** Incremental Build of configuration Debug for project fullProject ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MCU GCC Compiler'
+D:\CAN_LIN\STM32\fullProject\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F407VGTx -DSTM32F4 -DSTM32F4DISCOVERY -DSTM32 -DDEBUG -DUSE_STDPERIPH_DRIVER -DSTM32F40XX -DSTM32F40_41xxx -I"D:/CAN_LIN/STM32/fullProject/inc" -I"D:/CAN_LIN/STM32/fullProject/CMSIS/core" -I"D:/CAN_LIN/STM32/fullProject/CMSIS/device" -I"D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc" -I"D:/CAN_LIN/STM32/fullProject/Utilities" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TIMER2_Configuration':
+../src/main.c:57:19: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
+  NVIC_InitTypeDef NVIC_InitStructure;
+                   ^
+'Finished building: ../src/main.c'
+' '
+'Building target: fullProject.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:\CAN_LIN\STM32\fullProject\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "fullProject.elf" @"objects.list"  
+'Finished building target: fullProject.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "fullProject.elf" "fullProject.bin"
+arm-none-eabi-size "fullProject.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3488	   1076	   1056	   5620	   15f4	fullProject.elf
+' '
+
+21:22:01 Build Finished (took 1s.126ms)
+
