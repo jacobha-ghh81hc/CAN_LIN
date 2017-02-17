@@ -24,7 +24,7 @@ int main(void)
 
 	while(1)
 	{
-		//Delay_Timer();
+		Delay_Timer();
 	}
 }
 

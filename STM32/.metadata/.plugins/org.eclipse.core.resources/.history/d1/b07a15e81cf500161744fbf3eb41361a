@@ -24,7 +24,7 @@ int main(void)
 
 	while(1)
 	{
-		//Delay_Timer();
+		Delay_Timer();
 	}
 }
 
@@ -54,7 +54,7 @@ int main(void)
 void TIMER2_Configuration (void)
 {
 	TIM_TimeBaseInitTypeDef TIMER2;
-	//NVIC_InitTypeDef NVIC_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
 
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
 	TIM_InternalClockConfig(TIM2);
@@ -138,17 +138,17 @@ for(index = (168 * num); index != 0; index--)
 }
 
 /*----------------------------Delay_timer-----------------------------------------*/
-//void Delay_Timer (void)
-//{
-//	//TIM_Cmd(TIM2,ENABLE);
-//	if(TIM_GetFlagStatus(TIM2,TIM_FLAG_Update)!=1)
-//	{
-//		GPIO_ResetBits(GPIOD, GPIO_Pin_13);
-//		TIM_ClearFlag(TIM2, TIM_FLAG_Update);
-//		GPIO_SetBits(GPIOD, GPIO_Pin_13);
-//		TIM_Cmd(TIM2,ENABLE);
-//	}
-//}
+void Delay_Timer (void)
+{
+	//TIM_Cmd(TIM2,ENABLE);
+	if(TIM_GetFlagStatus(TIM2,TIM_FLAG_Update)!=1)
+	{
+		GPIO_ResetBits(GPIOD, GPIO_Pin_13);
+		TIM_ClearFlag(TIM2, TIM_FLAG_Update);
+		GPIO_SetBits(GPIOD, GPIO_Pin_13);
+		TIM_Cmd(TIM2,ENABLE);
+	}
+}
 
 
 
