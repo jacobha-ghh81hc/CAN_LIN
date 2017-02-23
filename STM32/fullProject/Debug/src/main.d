@@ -32,7 +32,10 @@ src/main.o: ../src/main.c \
  D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/stm32f4xx_usart.h \
  D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/stm32f4xx_wwdg.h \
  D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/misc.h \
- D:/CAN_LIN/STM32/fullProject/Utilities/stm32f4_discovery.h
+ D:/CAN_LIN/STM32/fullProject/Utilities/stm32f4_discovery.h \
+ D:/CAN_LIN/STM32/fullProject/inc/LED_CONFIGURATION.h \
+ D:/CAN_LIN/STM32/fullProject/inc/LIN_CONFIG.h \
+ D:/CAN_LIN/STM32/fullProject/inc/DELAY.h
 
 D:/CAN_LIN/STM32/fullProject/CMSIS/device/stm32f4xx.h:
 
@@ -101,3 +104,9 @@ D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/stm32f4xx_wwdg.h:
 D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/misc.h:
 
 D:/CAN_LIN/STM32/fullProject/Utilities/stm32f4_discovery.h:
+
+D:/CAN_LIN/STM32/fullProject/inc/LED_CONFIGURATION.h:
+
+D:/CAN_LIN/STM32/fullProject/inc/LIN_CONFIG.h:
+
+D:/CAN_LIN/STM32/fullProject/inc/DELAY.h:

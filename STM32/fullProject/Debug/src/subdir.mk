@@ -4,18 +4,33 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/DELAY.c \
+../src/DELAY_NORMAL.c \
+../src/LED_CONFIGURATION.c \
+../src/LIN_CONFIG.c \
+../src/LIN_CONFIGURATION.c \
 ../src/main.c \
 ../src/stm32f4xx_it.c \
 ../src/syscalls.c \
 ../src/system_stm32f4xx.c 
 
 OBJS += \
+./src/DELAY.o \
+./src/DELAY_NORMAL.o \
+./src/LED_CONFIGURATION.o \
+./src/LIN_CONFIG.o \
+./src/LIN_CONFIGURATION.o \
 ./src/main.o \
 ./src/stm32f4xx_it.o \
 ./src/syscalls.o \
 ./src/system_stm32f4xx.o 
 
 C_DEPS += \
+./src/DELAY.d \
+./src/DELAY_NORMAL.d \
+./src/LED_CONFIGURATION.d \
+./src/LIN_CONFIG.d \
+./src/LIN_CONFIGURATION.d \
 ./src/main.d \
 ./src/stm32f4xx_it.d \
 ./src/syscalls.d \

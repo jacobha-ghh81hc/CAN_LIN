@@ -32,7 +32,9 @@ src/stm32f4xx_it.o: ../src/stm32f4xx_it.c \
  D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/stm32f4xx_usart.h \
  D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/stm32f4xx_wwdg.h \
  D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/misc.h \
- D:/CAN_LIN/STM32/fullProject/inc/stm32f4xx_it.h
+ D:/CAN_LIN/STM32/fullProject/inc/stm32f4xx_it.h \
+ D:/CAN_LIN/STM32/fullProject/inc/DELAY.h \
+ D:/CAN_LIN/STM32/fullProject/inc/LED_CONFIGURATION.h
 
 D:/CAN_LIN/STM32/fullProject/CMSIS/device/stm32f4xx.h:
 
@@ -101,3 +103,7 @@ D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/stm32f4xx_wwdg.h:
 D:/CAN_LIN/STM32/fullProject/StdPeriph_Driver/inc/misc.h:
 
 D:/CAN_LIN/STM32/fullProject/inc/stm32f4xx_it.h:
+
+D:/CAN_LIN/STM32/fullProject/inc/DELAY.h:
+
+D:/CAN_LIN/STM32/fullProject/inc/LED_CONFIGURATION.h:
